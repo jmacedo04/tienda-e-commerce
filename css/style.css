@@ -1,19 +1,87 @@
-:root{
-    --blanco: #ffffff;
-    --oscuro: #212121;
-    --primario: #ffd500;
-    --secundario: #5fa8d3;
-    --gris: #555b6e;
-    --grisClaro: #dfe9f3
-}
-
-html{
+html {
     font-size: 62.5%;
-    box-sizing: border-box;  /*Hack para Box model*/
-    scroll-snap-type: y proximity;
-}
-
-.contenedor{
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.6rem;
+  }
+  
+  p {
+    font-size: 2rem;
+    color: #000;
+  }
+  
+  .contenedor {
     max-width: 120rem;
+    width: 95%;
     margin: 0 auto;
-}
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+  }
+  
+  h1, h2, h3 {
+    margin: 0; /*Eliminar margen*/
+  }
+  
+  h1 {
+    font-size: 4rem;
+    font-weight: 900;
+  }
+  
+  h2 {
+    font-size: 3.6rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+  }
+  
+  .header {
+    background-color: #ef233c;
+  }
+  .header .contenido-header {
+    padding: 2.5rem 0; /*Equivale a 2.5rem puedes usar operaciones (+-/*/
+  }
+  @media (min-width: 480px) {
+    .header .contenido-header {
+      display: flex;
+      justify-content: space-between; /*Mueve uno a la izquierda y el otro elemento a la Derecha*/
+      align-items: center; /*Centrarlo verticalmente*/
+      /*Para agregar contenido diferente*/
+    }
+  }
+  .header .contenido-header h1 {
+    color: #FFF;
+    margin-bottom: 1rem; /*separación hacia bajo*/
+    text-align: center;
+  }
+  @media (min-width: 768px) {
+    .header .contenido-header h1 {
+      margin-bottom: 0;
+    }
+  }
+  .header .navegacion-principal {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .header .navegacion-principal a {
+    color: #FFF;
+    font-size: 2rem;
+  }
+  .header .navegacion-principal a:hover { /*Hace referencia a lo que estamos rodeando*/
+    color: #FFFF00;
+  }
+  
