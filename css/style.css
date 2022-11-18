@@ -1,0 +1,19 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffd500;
+    --secundario: #5fa8d3;
+    --gris: #555b6e;
+    --grisClaro: #dfe9f3
+}
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;  /*Hack para Box model*/
+    scroll-snap-type: y proximity;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
